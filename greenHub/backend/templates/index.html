@@ -61,9 +61,10 @@
 
 <body>
     {% comment %} Header {% endcomment %}
-    <nav class="navbar navbar-expand-lg bg-light">
+    <section id="header">
+    {% comment %} <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Lmao</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -75,16 +76,6 @@
               <li class="nav-item">
                 <a class="nav-link active" href="#">News | Articles</a>
               </li>
-              {% comment %} <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a> {% endcomment %}
-                {% comment %} <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul> {% endcomment %}
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Forums</a>
                   </li>
@@ -93,14 +84,110 @@
                   </li>
               </li>
             </ul>
-            {% comment %} <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> {% endcomment %}
+          </div>
+        </div>
+      </nav> {% endcomment %}
+      <nav class="navbar navbar-expand-lg mr-auto">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <div class="navbar-brand">
+                <a class="nav-brand">GreenHub</a>
+              </div>
+              <div class="nav-link-flex">
+                <a class="nav-link" href="#about">News|Articles</a>
+                <span class="ball-animation"></span>
+              </div>
+              <div class="nav-link-flex">
+                <a class="nav-link" href="#tracks">Forums</a>
+                <span class="ball-animation"></span>
+              </div>
+              <div class="nav-link-flex">
+                <a class="nav-link" href="#mu-sponsors">Fundraisers</a>
+                <span class="ball-animation"></span>
+              </div>
+              {% comment %} <div class="nav-link-flex">
+                <a class="nav-link" href="#rules">Rulebook</a>
+                <span class="ball-animation"></span>
+              </div> {% endcomment %}
+              {% comment %} <div class="nav-link-flex">
+                <a class="nav-link" href="#mu-prizes">Prizes</a>
+                <span class="ball-animation"></span>
+              </div> {% endcomment %}
+              <div class="nav-link-flex">
+                <a class="nav-link" href="#Timeline">Timeline</a>
+                <span class="ball-animation"></span>
+              </div>
+              <a class="nav-empty-space" href="#">Empty</a>
+            </div>
           </div>
         </div>
       </nav>
       {% comment %} End Header {% endcomment %}
+    </section>
+    <section id="footer">
+      <div class="footer">
+        <div class="footerGrid">
+    
+          <div class="fGridElement">
+            <h4 class="fHeading">GreenHub</h4>
+            <hr class="fHrStyle"></hr>
+            <p class="fPara">Our team believes in creating efficient and creative technological solutions to enviromental problems and promote efficient and judicious use of resources</p>
+          </div>
+    
+          <div class="fGridElement">
+            <h4 class="fHeading">Quick Links</h4>
+            <hr class="fHrStyle"></hr>
+          
+            <div class="fLink">
+              <a  href=""> Info</a>
+            </div>
+    
+            <div class="fLink">
+              <a  href=""> GitHub Repository</a>
+            </div>
+    
+            <div class="fLink">
+              <a  href=""> UNEP</a>
+            </div>
+          </div>
+    
+          <div class="fGridElement">
+            <h4 class="fHeading">Contact Us</h4>
+            <hr class="fHrStyle"></hr>
+            <div class="fContact">
+                <div class="pNo">
+                    Ph No. : 271-9876
+                </div>
+                <div class="pNo">
+                  <p>+91 123456789 | Aryan</p>
+                  <p>+91 987654321 | Akshavya</p>
+                  <p>+91 143276598 | Avirat</p>
+              </div>
+            </div>
+            <div class="fContact">
+                <div class="pNo">
+                    Email : 
+                </div>
+                <div class="pNo">
+                  <br></br>
+                  <p>aryan@thapar.edu| Aryan</p>
+                  <p>lolu@thapar.edu | Akshavya</p>
+                  <p>avirat@thapar.edu | Avirat</p>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+        <center><div class="finisher">
+            Made With HTML,CSS Django 
+          </div></center>
+      </div>
+    </section>
 </body>
 
 </html>

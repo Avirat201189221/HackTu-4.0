@@ -1,3 +1,152 @@
 body{
     background:azure;
 }
+/* Header Styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 99999999999999999999999999999;
+    background:#348508;
+    justify-content: flex-end;
+    transition: 1s;
+  }
+  
+  .container-fluid {
+    padding: 0rem;
+  }
+  
+  .navbar-brand {
+    /* font-size: 3rem; */
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0px;
+    margin-left: 1rem;
+    font-weight: bolder;
+  }
+  
+  .navbar-brand img {
+    width: 5rem;
+  }
+  
+  .nav-brand{
+    font-size: 3rem;
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
+  
+    color: white;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0px;
+    text-decoration: none;
+    padding-bottom: 2rem;
+  }
+  
+  .nav-link-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+  }
+  .navbar-collapse {
+    transition: 1s;
+  }
+  @media screen and (max-width: 760px) {
+    .nav-link-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  .ball-animation {
+    width: 0px;
+    height: 0px;
+    transition: 0.25s;
+    background-color: rgb(148, 123, 59);
+    border-radius: 100px;
+  }
+  
+  .nav-link-flex:hover .ball-animation {
+    width: 5px;
+    height: 5px;
+    background-color: white;
+  }
+  
+  .nav-link {
+    font-size: 1.5rem;
+    margin: 1rem 0.5rem 0rem 0.5rem;
+  
+    color: white;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0px;
+  }
+  .nav-link:hover {
+    /* border-style: solid;
+    border-color: black; */
+    border-radius: 1.75rem;
+    color: white;
+  }
+  
+  .nav-empty-space {
+    opacity: 0;
+  }
+/* footer styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+.footer{
+  margin-top: 0rem;
+  padding: 0.05rem;
+  position: absolute;
+  background-color: #348508;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: 'Montserrat';
+  }
+.footerGrid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.fGridElement{
+  color:azure;
+  margin: 2rem;
+}
+.fHeading{
+  margin: 0rem;
+}
+.fHrStyle{
+  background: black;
+  color: black;
+  border-color:black;
+  height:0.1px;
+  width: 140px;
+  display: inline-block;
+  margin-top: 0rem;
+}
+.fLink{
+  margin: 0.5rem;
+}
+.fLink a{
+  color: white;
+  text-decoration: none;
+}
+.fPara{
+  max-width: 400px;
+}
+.fContact{
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+}
+.pNo {
+  font-size: 12px;
+}
+.pNo p{
+  margin: 0rem;
+}
+.finisher{
+  font-size: 12px;
+  color: azure;
+  margin-bottom: 0.5rem;
+}
