@@ -5,5 +5,7 @@ from app import views
 
 urlpatterns = [
    path("",views.index,name='home'),
+   path("fundraiser",views.fund,name='home'),
+   path("newsArticles",views.nA,name='home'),
    
 ]
